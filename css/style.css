@@ -44,3 +44,210 @@ body {
           height: 100vh;
   margin: 0;
     }
+
+
+    
+
+/* ============================= */
+/* Estilos generales de la app   */
+/* ============================= */
+
+.inicio-app-body {
+  background: linear-gradient(135deg, #0b0f0b, #0c2c1f, #07150f);
+  min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0fff0;
+}
+
+/* ============================= */
+/* Navbar                        */
+/* ============================= */
+.navbar {
+  background: linear-gradient(145deg, #041a0d, #0c2c1f);
+  border: 2px solid #0aff99;
+}
+
+.navbar .nav-link {
+  color: #a0ffb3 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #0aff99 !important;
+  text-shadow: 0 0 5px #0aff99;
+}
+
+.navbar-brand {
+  color: #0aff99 !important;
+  text-shadow: 0 0 8px #0aff99;
+}
+
+.navbar-toggler {
+  border-color: #0aff99;
+}
+
+/* ============================= */
+/* Secciones inicio / login      */
+/* ============================= */
+.inicio-card {
+  background: linear-gradient(to bottom, #041a0dcc, #0c2c1fcc);
+  border: 2px solid #0aff99;
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 400px;
+  margin: 5rem auto;
+  box-shadow: 0 0 15px #0aff99;
+}
+
+.inicio-logo {
+  max-width: 180px;
+  filter: drop-shadow(0 0 10px #0aff99);
+}
+
+.inicio-btn {
+  background: linear-gradient(90deg, #0c2c1f, #041a0d);
+  color: #0aff99 !important;
+  border: 1px solid #0aff99;
+  transition: all 0.3s ease;
+}
+
+.inicio-btn:hover {
+  background: #0aff99;
+  color: #041a0d !important;
+  box-shadow: 0 0 10px #0aff99;
+}
+
+.inicio-text {
+  color: #a0ffb3;
+  font-size: 0.95rem;
+}
+
+/* ============================= */
+/* Desktop section               */
+/* ============================= */
+.desktop-view h1, 
+.desktop-view h2, 
+.desktop-view p {
+  color: #a0ffb3;
+}
+
+.desktop-view .btn-success {
+  background: #0aff99;
+  border: 1px solid #0aff99;
+  color: #041a0d;
+  transition: all 0.3s ease;
+}
+
+.desktop-view .btn-success:hover {
+  background: #041a0d;
+  color: #0aff99;
+  box-shadow: 0 0 10px #0aff99;
+}
+
+.desktop-view .btn-outline-light {
+  color: #0aff99;
+  border-color: #0aff99;
+}
+
+.desktop-view .btn-outline-light:hover {
+  background: #0aff99;
+  color: #041a0d;
+}
+
+/* ============================= */
+/* Videos y multimedia           */
+/* ============================= */
+video {
+  
+  border: 2px solid #0aff99;
+  box-shadow: 0 0 15px #0aff99;
+  border-radius: 10px;
+}
+
+/* ============================= */
+/* Mobile view adjustments       */
+/* ============================= */
+.mobile-view {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .desktop-view { display: none; }
+  .mobile-view { display: block; margin-top: 6rem; }
+}
+
+
+/* ============================= */
+/* Footer verde neón y glow      */
+/* ============================= */
+.footer {
+  background: #041a0d;
+  border-top: 2px solid #0aff99;
+  position: relative;
+}
+
+.footer-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #00ff88, #00ffaa, #00ff88);
+  box-shadow: 0 0 15px #00ff88, 0 0 30px #00ff88;
+  animation: moverGlow 3s linear infinite;
+  border-radius: 2px;
+}
+
+/* Animación que hace "correr" el glow */
+@keyframes moverGlow {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(50%); }
+}
+
+/* Efectos de hover en links e íconos del footer */
+.footer a:hover, 
+.footer i:hover {
+  color: #00ff88 !important;
+  transition: color 0.3s;
+}
+
+/* Glow y hover neón para botones y cards */
+.inicio-card, .inicio-btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.inicio-card:hover, .inicio-btn:hover {
+  box-shadow: 0 0 15px #00ff88, 0 0 30px #00ffaa;
+  transform: translateY(-3px);
+}
+
+/* Animación sutil de pulsación para acciones rápidas */
+.inicio-card {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px #00ff88, 0 0 20px #00ffaa;
+  }
+  50% {
+    box-shadow: 0 0 20px #00ff88, 0 0 40px #00ffaa;
+  }
+}
+
+/* Scroll horizontal para acciones rápidas en mobile */
+.d-flex.overflow-auto > .inicio-card {
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+/* Glow en icons del navbar y footer al hover */
+.nav-link:hover i, .footer a:hover i {
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
