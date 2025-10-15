@@ -7,46 +7,44 @@ body {
 }
 
 #logo {
-    display: block;
-    margin: 30px auto;
-    
-
+  display: block;
+  margin: 30px auto;
 }
 .form-signin {
-    max-width: 400px;
-    padding: 30px;
-    }
+  max-width: 400px;
+  padding: 30px;
+}
 
- .form-signin .form-floating:focus-within {
-    z-index: 2;
-
-    }
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
 /*espacio entre correo/contraseña */
 .form-signin input[type="email"] {
-    margin-bottom: 1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    }
+  margin-bottom: 1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
 
-    /*espacio entre los campos*/
-.form-signin input[type="password"] { 
-    margin-bottom: 1px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    }
+/*espacio entre los campos*/
+.form-signin input[type="password"] {
+  margin-bottom: 1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 
-    .text-muted {
-        color: white !important;
-    }
+.text-muted {
+  color: white !important;
+}
 
-    .color-fondo {
-       background: linear-gradient(180deg, #052d23 10%, #000000 90%);
-          height: 100vh;
+.color-fondo {
+  background: linear-gradient(180deg, #052d23 10%, #000000 90%);
+  height: 100vh;
   margin: 0;
-    }
+}
 
-
-    
+.ImagenNav {
+  width: 50px;
+}
 
 /* ============================= */
 /* Estilos generales de la app   */
@@ -55,7 +53,7 @@ body {
 .inicio-app-body {
   background: linear-gradient(135deg, #0b0f0b, #0c2c1f, #07150f);
   min-height: 100vh;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #e0fff0;
 }
 
@@ -65,8 +63,9 @@ body {
 .navbar {
   background: linear-gradient(145deg, #041a0d, #0c2c1f);
   border: 2px solid #0aff99;
+  width: 90%;
 }
-
+ /* trabajo con important para navbar */
 .navbar .nav-link {
   color: #a0ffb3 !important;
   transition: color 0.3s ease;
@@ -125,8 +124,8 @@ body {
 /* ============================= */
 /* Desktop section               */
 /* ============================= */
-.desktop-view h1, 
-.desktop-view h2, 
+.desktop-view h1,
+.desktop-view h2,
 .desktop-view p {
   color: #a0ffb3;
 }
@@ -155,27 +154,30 @@ body {
 }
 
 /* ============================= */
-/* Videos y multimedia           */
+/* Videos           */
 /* ============================= */
 video {
-  
   border: 2px solid #0aff99;
   box-shadow: 0 0 15px #0aff99;
   border-radius: 10px;
 }
 
 /* ============================= */
-/* Mobile view adjustments       */
+/* Mobile (celulares)      */
 /* ============================= */
 .mobile-view {
   display: none;
 }
 
 @media (max-width: 992px) {
-  .desktop-view { display: none; }
-  .mobile-view { display: block; margin-top: 6rem; }
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
+    margin-top: 6rem;
+  }
 }
-
 
 /* ============================= */
 /* Footer verde neón y glow      */
@@ -200,23 +202,29 @@ video {
 
 /* Animación que hace "correr" el glow */
 @keyframes moverGlow {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(50%); }
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
 }
 
 /* Efectos de hover en links e íconos del footer */
-.footer a:hover, 
+.footer a:hover,
 .footer i:hover {
   color: #00ff88 !important;
   transition: color 0.3s;
 }
 
 /* Glow y hover neón para botones y cards */
-.inicio-card, .inicio-btn {
+.inicio-card,
+.inicio-btn {
   transition: all 0.3s ease-in-out;
 }
 
-.inicio-card:hover, .inicio-btn:hover {
+.inicio-card:hover,
+.inicio-btn:hover {
   box-shadow: 0 0 15px #00ff88, 0 0 30px #00ffaa;
   transform: translateY(-3px);
 }
@@ -227,7 +235,8 @@ video {
 }
 
 @keyframes pulseGlow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 10px #00ff88, 0 0 20px #00ffaa;
   }
   50% {
@@ -242,20 +251,21 @@ video {
 }
 
 /* Glow en icons del navbar y footer al hover */
-.nav-link:hover i, .footer a:hover i {
+.nav-link:hover i,
+.footer a:hover i {
   color: #00ff88;
   text-shadow: 0 0 10px #00ff88;
   transition: all 0.3s ease-in-out;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .fondo-imagen {
   position: relative;
   min-height: 100vh;
-  background: url('../img/pekkoError.png') center/cover no-repeat;
+  background: url("../img/pekkoError.png") center/cover no-repeat;
 }
 
 .fondo-imagen::after {
@@ -269,7 +279,7 @@ body {
 
 .texto-animado {
   color: #00ff99;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid #00ff99;
@@ -278,12 +288,18 @@ body {
 }
 
 @keyframes escribir {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes parpadeo {
-  50% { border-color: black }
+  50% {
+    border-color: black;
+  }
 }
 
 /* botón neón error 404 animado */
@@ -308,7 +324,8 @@ body {
 
 /*  brillo constante sutil  */
 @keyframes brilloBoton {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
   }
   50% {
@@ -328,7 +345,12 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(120deg, transparent, rgba(0,255,153,0.3), transparent);
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(0, 255, 153, 0.3),
+    transparent
+  );
   transition: all 0.6s;
 }
 
