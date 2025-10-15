@@ -1,50 +1,6 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: black;
-  color: white;
-}
 
-#logo {
-  display: block;
-  margin: 30px auto;
-}
-.form-signin {
-  max-width: 400px;
-  padding: 30px;
-}
 
-.form-signin .form-floating:focus-within {
-  z-index: 2;
-}
-/*espacio entre correo/contraseña */
-.form-signin input[type="email"] {
-  margin-bottom: 1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
 
-/*espacio entre los campos*/
-.form-signin input[type="password"] {
-  margin-bottom: 1px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.text-muted {
-  color: white !important;
-}
-
-.color-fondo {
-  background: linear-gradient(180deg, #052d23 10%, #000000 90%);
-  height: 100vh;
-  margin: 0;
-}
-
-.ImagenNav {
-  width: 50px;
-}
 
 /* ============================= */
 /* Estilos generales de la app   */
@@ -55,6 +11,12 @@ body {
   min-height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #e0fff0;
+}
+/* =====================*/
+/* tamaño para los loguitos del nav */
+
+.ImagenNav {
+  width: 50px;
 }
 
 /* ============================= */
@@ -273,7 +235,7 @@ body {
   position: absolute;
   inset: 0;
   background: rgba(0, 20, 0, 0.7); /* capa verde oscura */
-  backdrop-filter: blur(5px); /* leve desenfoque */
+  backdrop-filter: blur(5px); /* pequeño desenfoque */
   z-index: -1;
 }
 
@@ -356,4 +318,33 @@ body {
 
 .btn-animado:hover::before {
   left: 100%;
+}
+
+/* === Tarjetas del equipo === */
+.dev-card {
+  background: rgba(30, 30, 30, 0.85);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dev-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 255, 100, 0.2);
+}
+
+.dev-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #198754; /* verde Bootstrap */
+}
+
+/* === Íconos sociales === */
+.social-links a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00ff7f;
+  transform: scale(1.15);
 }
